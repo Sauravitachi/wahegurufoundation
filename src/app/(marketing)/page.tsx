@@ -7,7 +7,6 @@ import {
   MissionVision,
   FeaturedAppeal,
   FocusAreas,
-  PartnerLogos,
   AdvisoryBoard,
   HowYouCanHelp,
   ProcessSteps,
@@ -17,13 +16,12 @@ import {
   FAQ,
 } from "@/components/sections";
 
-const SECTION_COMPONENTS: Record<HomeSectionKey, React.ComponentType> = {
+const SECTION_COMPONENTS: Partial<Record<HomeSectionKey, React.ComponentType>> = {
   hero: Hero,
   campaigns: CampaignGrid,
   missionVision: MissionVision,
   featuredAppeal: FeaturedAppeal,
   focusAreas: FocusAreas,
-  partners: PartnerLogos,
   advisoryBoard: AdvisoryBoard,
   howYouCanHelp: HowYouCanHelp,
   howWeWork: ProcessSteps,

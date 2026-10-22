@@ -115,7 +115,6 @@ export type HomeSectionKey =
   | "missionVision"
   | "featuredAppeal"
   | "focusAreas"
-  | "partners"
   | "advisoryBoard"
   | "howYouCanHelp"
   | "howWeWork"

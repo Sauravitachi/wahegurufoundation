@@ -3,7 +3,6 @@ export * from "./CampaignGrid";
 export * from "./MissionVision";
 export * from "./FeaturedAppeal";
 export * from "./FocusAreas";
-export * from "./PartnerLogos";
 export * from "./AdvisoryBoard";
 export * from "./HowYouCanHelp";
 export * from "./ProcessSteps";
