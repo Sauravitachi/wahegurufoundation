@@ -22,7 +22,7 @@ export const siteConfig = {
   contact: {
     email: "contact@wahegurufoundation.org",
     donationsEmail: "donate@wahegurufoundation.org",
-    phone: "+91 (011) 4567-8900",
+    phone: "+91 7986262556",
     tollFree: "1800-123-SEVA (7382)",
     whatsapp: "+91 98765 43210",
     address: {
@@ -46,12 +46,12 @@ export const siteConfig = {
 
   legal: {
     registeredName: "Waheguru Humanitarian Foundation Trust",
-    trustRegistrationNo: "TRUST/DL/2021/88741",
+    trustRegistrationNo: "DIC/OL/SOCIETIES/9143",
     darpanId: "DL/2021/0298411",
     section80G: "CIT(E)/DELHI/80G/2021-22/AABTW1234F/01",
     section12A: "CIT(E)/DELHI/12A/2021-22/AABTW1234F/02",
     pan: "AABTW1234F",
-    taxBenefitNote: "Donations to Waheguru Foundation are eligible for 50% tax exemption under Section 80G of the Indian Income Tax Act. Valid 80G receipt issued with Form 10BE filing.",
+    taxBenefitNote: "Donations to Waheguru Foundation are eligible for 50% tax exemption under Section 80G of the Indian Income Tax Act. receipt issued with Form 10BE filing.",
     fcraStatus: "Applied / Pending Renewal",
     auditors: "M/s K. Singh & Associates, Chartered Accountants",
   },
@@ -66,7 +66,6 @@ export const siteConfig = {
       "Seva",
       "Langar food relief",
       "Child education sponsorship",
-      "80G tax exemption donation",
       "Humanitarian aid",
       "Sarbat Da Bhala",
     ],

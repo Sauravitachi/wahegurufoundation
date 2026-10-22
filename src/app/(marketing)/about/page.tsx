@@ -59,7 +59,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="bg-[var(--navy-900)] text-white py-20 md:py-28 relative overflow-hidden">
+      <section className="bg-[var(--navy-800)] text-white py-20 md:py-28 relative overflow-hidden">
         <div className="absolute inset-0 bg-radial from-[var(--navy-700)]/30 to-transparent pointer-events-none" />
         <Container className="relative z-10 max-w-4xl text-center">
           <span className="text-xs md:text-sm font-bold uppercase tracking-widest text-[var(--gold-300)] mb-4 inline-block">
@@ -108,43 +108,7 @@ export default function AboutPage() {
         </Container>
       </Section>
 
-      {/* Story Timeline */}
-      <Section variant="surface" spacing="lg">
-        <Container className="max-w-4xl">
-          <SectionHeading
-            eyebrow="Milestones of Hope"
-            title="Our Journey of Grassroots Growth"
-            description="From a modest weekend kitchen to a nationwide humanitarian coalition supporting over 1.25 million lives."
-          />
-
-          <div className="relative border-l-2 border-[var(--gold-500)]/40 ml-4 sm:ml-32 space-y-12">
-            {timelineEvents.map((event) => (
-              <div key={event.year} className="relative pl-6 sm:pl-10 group">
-                {/* Year Badge */}
-                <div className="sm:absolute sm:-left-32 sm:top-0 text-left sm:text-right pr-4 mb-2 sm:mb-0">
-                  <span className="font-serif text-2xl font-bold text-[var(--gold-600)] block">
-                    {event.year}
-                  </span>
-                </div>
-
-                {/* Dot */}
-                <div className="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full bg-[var(--gold-500)] border-4 border-white shadow-xs group-hover:scale-125 transition-transform" />
-
-                {/* Card */}
-                <div className="rounded-2xl bg-white border border-[var(--border)] p-6 shadow-2xs">
-                  <h3 className="font-serif text-xl font-bold text-[var(--navy-900)] mb-2">
-                    {event.title}
-                  </h3>
-                  <p className="text-sm text-[var(--text-muted)] leading-relaxed">
-                    {event.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </Section>
-
+    
       {/* Advisory Board Section */}
       <Section variant="bg" spacing="lg" id="advisors">
         <Container>
@@ -188,69 +152,7 @@ export default function AboutPage() {
           </div>
         </Container>
       </Section>
-
-      {/* Transparency & Financial Downloads */}
-      <Section variant="surface" spacing="lg" id="transparency">
-        <Container className="max-w-4xl">
-          <SectionHeading
-            eyebrow="Audited Accountability"
-            title="Public Records &amp; Transparency Downloads"
-            description="We believe public charity is a sacred trust. Review our statutory registrations and annual audited balance sheets below."
-          />
-
-          {/* Legal Registrations Strip */}
-          <div className="rounded-2xl bg-white border border-[var(--border)] p-6 sm:p-8 mb-8 shadow-xs">
-            <h3 className="font-serif text-lg font-bold text-[var(--navy-900)] mb-4 flex items-center gap-2">
-              <ShieldCheck className="w-5 h-5 text-[var(--gold-600)]" />
-              <span>Statutory Certifications &amp; Licenses</span>
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-              <div className="p-3.5 rounded-xl bg-[var(--surface)] border border-[var(--border)]">
-                <span className="text-[var(--text-muted)] block">Public Charitable Trust</span>
-                <strong className="text-[var(--navy-900)] text-sm">{siteConfig.legal.trustRegistrationNo}</strong>
-              </div>
-              <div className="p-3.5 rounded-xl bg-[var(--surface)] border border-[var(--border)]">
-                <span className="text-[var(--text-muted)] block">NITI Aayog NGO Darpan</span>
-                <strong className="text-[var(--navy-900)] text-sm">{siteConfig.legal.darpanId}</strong>
-              </div>
-              <div className="p-3.5 rounded-xl bg-[var(--surface)] border border-[var(--border)]">
-                <span className="text-[var(--text-muted)] block">Section 80G Tax Exemption</span>
-                <strong className="text-[var(--navy-900)] text-sm">{siteConfig.legal.section80G}</strong>
-              </div>
-              <div className="p-3.5 rounded-xl bg-[var(--surface)] border border-[var(--border)]">
-                <span className="text-[var(--text-muted)] block">Income Tax 12A Registration</span>
-                <strong className="text-[var(--navy-900)] text-sm">{siteConfig.legal.section12A}</strong>
-              </div>
-            </div>
-          </div>
-
-          {/* Report Downloads */}
-          <div className="space-y-3">
-            {annualReports.map((report) => (
-              <div
-                key={report.title}
-                className="flex items-center justify-between p-5 rounded-2xl bg-white border border-[var(--border)] hover:border-[var(--gold-500)] transition-colors shadow-2xs"
-              >
-                <div className="flex items-center gap-4">
-                  <div className="h-10 w-10 rounded-xl bg-[var(--navy-100)] flex items-center justify-center text-[var(--navy-700)] shrink-0">
-                    <FileText className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-serif font-bold text-sm sm:text-base text-[var(--navy-900)]">
-                      {report.title}
-                    </h4>
-                    <p className="text-xs text-[var(--text-muted)]">
-                      {report.year} • PDF document • {report.size}
-                    </p>
-                  </div>
-                </div>
-
-                <ReportDownloadButton title={report.title} />
-              </div>
-            ))}
-          </div>
-        </Container>
-      </Section>
+    
     </>
   );
 }

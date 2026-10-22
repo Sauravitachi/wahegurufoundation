@@ -9,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/about",
     "/campaigns",
-    "/adopt-a-child",
     "/impact",
     "/gallery",
     "/blog",

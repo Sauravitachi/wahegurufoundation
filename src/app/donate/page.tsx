@@ -14,7 +14,7 @@ export const metadata = constructMetadata({
 export default function DonatePage() {
   return (
     <>
-      <section className="bg-[var(--navy-900)] text-white py-14 md:py-20 relative overflow-hidden">
+      <section className="bg-[var(--navy-800)] text-white py-14 md:py-20 relative overflow-hidden">
         <Container className="text-center max-w-3xl">
           <span className="text-xs md:text-sm font-bold uppercase tracking-widest text-[var(--gold-300)] mb-3 inline-block">
             ੴ • SARBAT DA BHALA • WELFARE OF ALL
@@ -23,7 +23,7 @@ export default function DonatePage() {
             Support Our Humanitarian Seva
           </h1>
           <p className="text-gray-300 text-base md:text-lg leading-relaxed font-light">
-            All donations are eligible for 50% income tax deduction under Section 80G. Instant certificate generated upon payment.
+            All donations are eligible for 50% income tax deduction under Section. Instant certificate generated upon payment.
           </p>
         </Container>
       </section>
@@ -32,7 +32,7 @@ export default function DonatePage() {
         <Container>
           <Suspense
             fallback={
-              <div className="py-20 text-center text-sm font-medium text-[var(--navy-700)]">
+              <div className="py-20 text-center text-sm font-medium text-[var(--navy-800)]">
                 Loading secure donation portal...
               </div>
             }

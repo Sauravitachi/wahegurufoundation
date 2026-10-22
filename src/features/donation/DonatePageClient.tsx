@@ -40,16 +40,13 @@ export function DonatePageClient() {
 
       {/* Right Trust & 80G Explanation Side Panel */}
       <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-24">
-        {/* 80G Tax Exemption Card */}
         <div className="rounded-3xl bg-[var(--surface)] border border-[var(--border)] p-6 sm:p-8 space-y-4">
           <div className="flex items-center gap-3">
             <div className="h-10 w-10 rounded-xl bg-[var(--gold-100)] border border-[var(--gold-300)] flex items-center justify-center text-[var(--gold-600)] shrink-0">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-serif text-lg font-bold text-[var(--navy-900)]">
-                50% Tax Exemption (80G)
-              </h3>
+             
               <p className="text-xs text-[var(--text-muted)]">
                 Recognized by Income Tax Department of India
               </p>

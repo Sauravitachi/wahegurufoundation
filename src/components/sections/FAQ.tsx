@@ -52,14 +52,7 @@ export function FAQ() {
                   Our donor relations desk is available Monday through Saturday.
                 </p>
               </div>
-            </div>
-
-            <Button asChild variant="outline" size="sm">
-              <a href={`mailto:${siteConfig.contact.donationsEmail}`}>
-                <Mail className="w-4 h-4 mr-2" />
-                <span>Contact Donor Desk</span>
-              </a>
-            </Button>
+            </div>            
           </div>
         </div>
       </Container>

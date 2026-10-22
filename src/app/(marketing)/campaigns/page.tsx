@@ -8,7 +8,7 @@ import { constructMetadata } from "@/lib/metadata";
 export const metadata = constructMetadata({
   title: "Humanitarian Campaigns & Appeals",
   description:
-    "Explore active community campaigns in hunger relief, girl child education, clean water, and disaster aid. 80G tax benefits available.",
+    "Explore active community campaigns in hunger relief, girl child education, clean water, and disaster aid. benefits available.",
   pathname: "/campaigns",
 });
 
@@ -16,7 +16,7 @@ export default function CampaignsPage() {
   return (
     <>
       {/* Header Banner */}
-      <section className="bg-[var(--navy-900)] text-white py-16 md:py-20 relative overflow-hidden">
+      <section className="bg-[var(--navy-800)] text-white py-16 md:py-20 relative overflow-hidden">
         <Container className="text-center max-w-3xl">
           <span className="text-xs md:text-sm font-bold uppercase tracking-widest text-[var(--gold-300)] mb-3 inline-block">
             DIRECT IMPACT CAUSES
@@ -25,7 +25,7 @@ export default function CampaignsPage() {
             Active Humanitarian Campaigns
           </h1>
           <p className="text-gray-300 text-base md:text-lg leading-relaxed font-light">
-            Every contribution directly funds field operations with audited 80G tax deductions and photographic impact verification.
+            Every contribution directly funds field operations with audited deductions and photographic impact verification.
           </p>
         </Container>
       </section>

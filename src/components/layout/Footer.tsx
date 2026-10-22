@@ -21,7 +21,7 @@ export function Footer() {
             <Link href="/" className="inline-flex items-center gap-3">
               <div className="relative h-10 w-10">
                 <Image
-                  src="/brand/symbol-light.svg"
+                  src="/brand/logo.png"
                   alt="Waheguru Foundation Logo"
                   fill
                   className="object-contain"
@@ -50,9 +50,7 @@ export function Footer() {
               </p>
               <p>
                 <strong className="text-gray-200">Registration No:</strong>{" "}
-                {siteConfig.legal.trustRegistrationNo} |{" "}
-                <strong className="text-gray-200">NITI Aayog Darpan:</strong>{" "}
-                {siteConfig.legal.darpanId}
+                {siteConfig.legal.trustRegistrationNo}
               </p>
             </div>
           </div>

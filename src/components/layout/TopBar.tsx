@@ -34,22 +34,10 @@ export function TopBar() {
 
           <div className="flex items-center gap-4">
 
-            <div className="h-3 w-px bg-[var(--border)]" />
-            <div className="flex items-center gap-3 text-[var(--text-muted)]">
-              <Link
-                href="/csr"
-                className="hover:text-[var(--gold-600)] transition-colors"
-              >
-                CSR Partnerships
-              </Link>
-              <span>•</span>
-              <Link
-                href="/volunteer"
-                className="hover:text-[var(--gold-600)] transition-colors"
-              >
-                Join as Volunteer
-              </Link>
-            </div>
+           <p>
+              <strong className="text-gray-800">Registration No:</strong>{" "}
+              {siteConfig.legal.trustRegistrationNo}
+            </p>
           </div>
         </Container>
       </div>

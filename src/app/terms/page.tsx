@@ -43,10 +43,7 @@ export default function TermsPage() {
             <p>
               However, if an accidental duplicate transaction or payment gateway technical error occurs, please contact us at <strong className="text-[var(--navy-900)]">{siteConfig.contact.donationsEmail}</strong> within 7 days of the transaction with your payment transaction ID. Valid claims will be reviewed and refunded back to the original payment source within 7 to 10 working days.
             </p>
-
-            <h2 className="font-serif text-2xl font-bold text-[var(--navy-900)]">
-              3. Section 80G Tax Exemption
-            </h2>
+           
             <p>
               Under Section 80G of the Indian Income Tax Act, 1961, 50% of the donated sum is exempt from taxable income for Indian citizens. Receipts are digitally generated and emailed upon payment confirmation. Donors must provide a valid Indian PAN card number to claim benefits under Form 10BE.
             </p>

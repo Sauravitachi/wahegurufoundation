@@ -5,7 +5,6 @@ export * from "./FeaturedAppeal";
 export * from "./FocusAreas";
 export * from "./PartnerLogos";
 export * from "./AdvisoryBoard";
-export * from "./AdoptCTA";
 export * from "./HowYouCanHelp";
 export * from "./ProcessSteps";
 export * from "./Testimonials";

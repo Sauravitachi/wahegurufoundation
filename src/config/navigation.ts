@@ -78,8 +78,8 @@ export const headerNavigation: NavItem[] = [
     ],
   },
   {
-    title: "Adopt a Child",
-    href: "/adopt-a-child",
+    title: "Gallery",
+    href: "/gallery",
   },
   {
     title: "Impact",
@@ -104,7 +104,6 @@ export const footerNavigation = {
     { title: "Rural Girls Scholarship", href: "/campaigns/rural-girls-education" },
     { title: "Mobile Health Clinics", href: "/campaigns/mobile-health-vans" },
     { title: "All Active Campaigns", href: "/campaigns" },
-    { title: "Adopt a Child Program", href: "/adopt-a-child" },
   ],
   getInvolved: [
     { title: "Make a Donation (80G)", href: "/donate" },
@@ -116,7 +115,6 @@ export const footerNavigation = {
   legal: [
     { title: "Privacy Policy", href: "/privacy-policy" },
     { title: "Terms of Service", href: "/terms" },
-    { title: "80G Tax Exemption Policy", href: "/about#transparency" },
     { title: "Donor Refund Policy", href: "/terms#refunds" },
   ],
 };

@@ -11,7 +11,7 @@ const waysToHelp = [
     icon: Heart,
     title: "Make a Donation",
     description:
-      "Every rupee powers fresh langar meals, school scholarships, and free medicines with 50% 80G tax exemption.",
+      "Every rupee powers fresh langar meals, school scholarships, and free medicines with 50%.",
     cta: "Donate Now",
     href: "/donate",
     accent: "gold",

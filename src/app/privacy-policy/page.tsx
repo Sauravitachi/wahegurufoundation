@@ -53,7 +53,7 @@ export default function PrivacyPolicyPage() {
               Your data is solely used to:
             </p>
             <ul className="list-disc pl-5 space-y-1">
-              <li>Generate and email your digitally signed 80G tax exemption receipts.</li>
+              <li>Generate and email your digitally signed receipts.</li>
               <li>File statutory Form 10BD with the Income Tax Department of India.</li>
               <li>Send periodic impact reports and transparency newsletters (which you can opt out of anytime).</li>
             </ul>

@@ -117,7 +117,6 @@ export type HomeSectionKey =
   | "focusAreas"
   | "partners"
   | "advisoryBoard"
-  | "childSponsorship"
   | "howYouCanHelp"
   | "howWeWork"
   | "testimonials"

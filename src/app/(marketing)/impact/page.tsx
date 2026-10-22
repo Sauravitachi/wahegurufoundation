@@ -29,7 +29,7 @@ export default function ImpactPage() {
   return (
     <>
       {/* Top Banner */}
-      <section className="bg-[var(--navy-900)] text-white py-16 md:py-24 relative overflow-hidden">
+      <section className="bg-[var(--navy-800)] text-white py-16 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-radial from-[var(--navy-700)]/30 to-transparent pointer-events-none" />
         <Container className="relative z-10 max-w-4xl text-center">
           <span className="text-xs md:text-sm font-bold uppercase tracking-widest text-[var(--gold-300)] mb-3 inline-block">

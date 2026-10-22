@@ -12,7 +12,6 @@ export const homeSectionsOrder: HomeSectionKey[] = [
   "focusAreas",
   "partners",
   "advisoryBoard",
-  "childSponsorship",
   "howYouCanHelp",
   "howWeWork",
   "testimonials",
@@ -26,7 +25,7 @@ export const heroContent = {
   headline: "Lighting the Lamp of Seva, Compassion & Dignity",
   tagline:
     "An Indian humanitarian foundation inspired by Sikh values of selfless seva. Uplifting underserved lives through hot langar meals, rural girl scholarships, and doorstep healthcare.",
-  primaryCtaText: "Donate with 80G Tax Exemption",
+  primaryCtaText: "Donate",
   primaryCtaHref: "/donate",
   secondaryCtaText: "Explore Our Work",
   secondaryCtaHref: "/campaigns",

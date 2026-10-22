@@ -105,13 +105,7 @@ export function FeaturedAppeal() {
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
-              </div>
-
-              {/* 80G Tax Exemption Note */}
-              <div className="pt-2 flex items-center gap-2 text-xs text-gray-400">
-                <ShieldCheck className="w-4 h-4 text-[var(--gold-500)] shrink-0" />
-                <span>Instant 80G receipt issued for 50% income tax deduction</span>
-              </div>
+              </div>            
             </div>
           </div>
         </div>

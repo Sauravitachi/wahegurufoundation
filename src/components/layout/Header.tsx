@@ -45,7 +45,7 @@ export function Header() {
         >
           <div className="relative h-10 w-10 sm:h-11 sm:w-11 transition-transform duration-200 group-hover:scale-105 shrink-0">
             <Image
-              src="/brand/symbol.svg"
+              src="/brand/logo.png"
               alt="Waheguru Foundation Emblem"
               fill
               className="object-contain"
@@ -57,7 +57,7 @@ export function Header() {
               WAHEGURU
             </span>
             <span className="text-[10px] sm:text-xs font-bold tracking-widest text-[var(--gold-600)] uppercase mt-0.5">
-              FOUNDATION • ਸੇਵਾ
+              FOUNDATION
             </span>
           </div>
         </Link>

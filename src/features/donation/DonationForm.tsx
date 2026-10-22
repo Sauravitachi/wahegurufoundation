@@ -380,11 +380,7 @@ export function DonationForm({
           <div className="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-[var(--surface)] border border-[var(--border)]">
             <Lock className="w-3.5 h-3.5 text-emerald-600" />
             <span>256-Bit SSL Encrypted</span>
-          </div>
-          <div className="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-[var(--surface)] border border-[var(--border)]">
-            <ShieldCheck className="w-3.5 h-3.5 text-[var(--gold-600)]" />
-            <span>80G Tax Exemption</span>
-          </div>
+          </div>         
           <div className="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-[var(--surface)] border border-[var(--border)]">
             <FileCheck className="w-3.5 h-3.5 text-[var(--navy-700)]" />
             <span>Instant Digital Receipt</span>
@@ -392,5 +388,5 @@ export function DonationForm({
         </div>
       </div>
     </form>
-  );
+  );  
 }
