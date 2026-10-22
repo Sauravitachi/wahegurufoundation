@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+:root {
+  /* Navy: trust, stability */
+  --navy-900: #0F1E33;
+  --navy-800: #162F52;
+  --navy-700: #1F416F;   /* PRIMARY (from logo) */
+  --navy-600: #2A5A8A;
+  --navy-100: #E6EDF5;
+
+  /* Gold: seva, light, warmth */
+  --gold-300: #EED181;   /* flame highlight (from logo) */
+  --gold-500: #D0AC60;   /* ACCENT (from logo) */
+  --gold-600: #B08A45;   /* gradient shadow (from logo) */
+  --gold-100: #F8F0DC;
+
+  /* Neutrals */
+  --bg: #FFFDF8;
+  --surface: #F8F3E8;
+  --border: #E7DFCB;
+  --text: #0F1E33;
+  --text-muted: #4B5B73;
+
+  /* Semantic mapping (components use ONLY these) */
+  --primary: var(--navy-700);
+  --primary-foreground: #FFFFFF;
+  --accent: var(--gold-500);
+  --accent-foreground: var(--navy-900);
+  --ring: var(--gold-500);
+
+  --gradient-gold: linear-gradient(135deg, #EED181 0%, #D0AC60 50%, #B08A45 100%);
+  --gradient-navy: linear-gradient(180deg, #2A5A8A 0%, #162F52 100%);
+
+  --radius: 1rem;
+}
+
+.dark {
+  --bg: #0B1626;
+  --surface: #12233B;
+  --border: #223A5C;
+  --text: #F8F3E8;
+  --text-muted: #A9B6C9;
+  --primary: var(--gold-500);
+  --primary-foreground: var(--navy-900);
+  --accent: var(--gold-300);
+}
+
+@theme inline {
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
+  --color-navy-600: var(--navy-600);
+  --color-navy-100: var(--navy-100);
+
+  --color-gold-300: var(--gold-300);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+  --color-gold-100: var(--gold-100);
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-ring: var(--ring);
+
+  --font-heading: var(--font-heading), "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: var(--font-heading), "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: var(--font-sans), "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-gurmukhi: var(--font-noto-gurmukhi), sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Gradients & Utilities */
+.btn-gold-gradient {
+  background: var(--gradient-gold);
+  color: var(--navy-900);
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px 0 rgba(208, 172, 96, 0.35);
+}
+
+.btn-gold-gradient:hover {
+  filter: brightness(1.05);
+  box-shadow: 0 6px 20px 0 rgba(208, 172, 96, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-gold-gradient:active {
+  transform: translateY(0);
+}
+
+.gradient-navy-bg {
+  background: var(--gradient-navy);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
