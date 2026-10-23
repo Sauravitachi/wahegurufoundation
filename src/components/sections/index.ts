@@ -11,3 +11,4 @@ export * from "./GalleryGrid";
 export * from "./StoriesGrid";
 export * from "./FAQ";
 export * from "./StatsCounter";
+export * from "./OurImpactMap";

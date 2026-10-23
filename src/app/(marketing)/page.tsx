@@ -14,12 +14,14 @@ import {
   GalleryGrid,
   StoriesGrid,
   FAQ,
+  OurImpactMap,
 } from "@/components/sections";
 
 const SECTION_COMPONENTS: Partial<Record<HomeSectionKey, React.ComponentType>> = {
   hero: Hero,
   campaigns: CampaignGrid,
   missionVision: MissionVision,
+  ourImpactMap: OurImpactMap,
   featuredAppeal: FeaturedAppeal,
   focusAreas: FocusAreas,
   advisoryBoard: AdvisoryBoard,

@@ -15,7 +15,6 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://wahegurufoundation.org",
   ogImage: "/brand/og-image.jpg",
   
-  // Flag indicating placeholder/demo data for development and preview
   isDemoData: process.env.NEXT_PUBLIC_DEMO_DATA === "true" || process.env.NODE_ENV !== "production",
   demoNotice: "Preview Environment: Content, statistics, and person details are illustrative placeholders.",
 

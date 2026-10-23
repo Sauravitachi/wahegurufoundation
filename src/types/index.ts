@@ -122,3 +122,4 @@ export type HomeSectionKey =
   | "galleryPreview"
   | "latestStories"
   | "faq"
+  | "ourImpactMap";

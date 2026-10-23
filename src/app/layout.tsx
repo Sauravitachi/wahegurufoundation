@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Outfit, Plus_Jakarta_Sans, Noto_Sans_Gurmukhi } from "next/font/google";
+import { Outfit, Plus_Jakarta_Sans, Noto_Sans_Gurmukhi, Caveat } from "next/font/google";
 import "@/styles/globals.css";
 import { defaultSeo } from "@/config/seo";
 import { TopBar } from "@/components/layout/TopBar";
@@ -26,6 +26,12 @@ const notoGurmukhi = Noto_Sans_Gurmukhi({
   display: "swap",
 });
 
+const caveat = Caveat({
+  subsets: ["latin"],
+  variable: "--font-caveat",
+  display: "swap",
+});
+
 export const metadata: Metadata = defaultSeo;
 
 export const viewport: Viewport = {
@@ -45,7 +51,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${plusJakartaSans.variable} ${notoGurmukhi.variable} scroll-smooth`}
+      className={`${outfit.variable} ${plusJakartaSans.variable} ${notoGurmukhi.variable} ${caveat.variable} scroll-smooth`}
     >
       <head>
         <script

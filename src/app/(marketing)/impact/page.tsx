@@ -6,6 +6,7 @@ import { Section } from "@/components/layout/Section";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
 import { CountUp } from "@/components/shared/CountUp";
+import { OurImpactMap } from "@/components/sections";
 import { impactStats } from "@/content/stats";
 import { constructMetadata } from "@/lib/metadata";
 
@@ -72,6 +73,9 @@ export default function ImpactPage() {
           </div>
         </Container>
       </Section>
+
+      {/* Interactive India Footprint Map & Photo Collage */}
+      <OurImpactMap />
 
       {/* States Reached Map Strip */}
       <Section variant="surface" spacing="lg">

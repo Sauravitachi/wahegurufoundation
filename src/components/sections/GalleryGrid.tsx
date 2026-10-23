@@ -12,42 +12,42 @@ import { Lightbox, LightboxImage } from "@/components/shared/Lightbox";
 
 const previewImages: LightboxImage[] = [
   {
-    src: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1000&q=80",
+    src: "/gallary/gallary11.jpeg",
     alt: "Morning langar distribution to hospital attendees",
     title: "Daily Langar Seva",
     category: "Hunger Relief",
     caption: "Preparing and handing out fresh lentils, rotis, and vegetables to hospital caregivers.",
   },
   {
-    src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=80",
+    src: "/gallary/gallary12.jpeg",
     alt: "Rural girls classroom in Punjab",
     title: "Smart Village Classrooms",
     category: "Education",
     caption: "Equipping young minds with digital learning tablets and interactive learning modules.",
   },
   {
-    src: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1000&q=80",
+    src: "/gallary/gallary13.jpeg",
     alt: "Mobile health clinic providing health checkups",
     title: "Doorstep Medical Consultation",
     category: "Healthcare",
     caption: "Volunteer physicians providing blood pressure checkups, pediatric care, and medicines.",
   },
   {
-    src: "https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=1000&q=80",
+    src: "/gallary/gallary14.jpeg",
     alt: "Community clean water solar filtration plant",
     title: "Solar Water Station",
     category: "Environment",
     caption: "Decentralized RO plant providing 10,000 litres of clean potable water to village families.",
   },
   {
-    src: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1000&q=80",
+    src: "/gallary/gallary15.jpeg",
     alt: "Emergency winter warmth distribution",
     title: "Winter Thermal Relief",
     category: "Disaster Relief",
     caption: "Handing out woollen blankets and thermal innerwear to pavement workers on single-digit nights.",
   },
   {
-    src: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1000&q=80",
+    src: "/gallary/gallary16.jpeg",
     alt: "Children smiling at rural school assembly",
     title: "Community Growth & Joy",
     category: "Empowerment",

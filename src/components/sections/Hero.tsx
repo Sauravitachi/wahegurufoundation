@@ -9,7 +9,7 @@ import { heroContent } from "@/content/home";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#FFFDF8] via-[#FAF4E6] to-[#FFFDF8] py-12 sm:py-16 lg:py-20 border-b border-[var(--border)]">
+    <section className="relative overflow-hidden bg-white/95 py-12 sm:py-16 lg:py-20 border-b border-[var(--border)]">
       {/* Decorative ambient subtle warmth */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-[var(--gold-100)]/70 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-10 w-80 h-80 bg-[var(--surface)]/90 rounded-full blur-2xl pointer-events-none" />

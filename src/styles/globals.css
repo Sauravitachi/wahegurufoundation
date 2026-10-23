@@ -9,9 +9,9 @@
   --navy-100: #E6EDF5;
 
   /* Gold: seva, light, warmth */
-  --gold-300: #EED181;   /* flame highlight (from logo) */
-  --gold-500: #D0AC60;   /* ACCENT (from logo) */
-  --gold-600: #B08A45;   /* gradient shadow (from logo) */
+  --gold-300: #fff7e0;   /* flame highlight (from logo) */
+  --gold-500: #f4d797;   /* ACCENT (from logo) */
+  --gold-600: #cda762;   /* gradient shadow (from logo) */
   --gold-100: #F8F0DC;
 
   /* Neutrals */
@@ -73,6 +73,7 @@
   --font-serif: var(--font-heading), "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-sans: var(--font-sans), "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-gurmukhi: var(--font-noto-gurmukhi), sans-serif;
+  --font-caveat: var(--font-caveat), "Caveat", cursive;
 }
 
 body {
@@ -82,6 +83,16 @@ body {
   min-height: 100vh;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle paper/canvas grain texture */
+.bg-grain-texture {
+  background-color: #FAF8F5;
+  background-image: 
+    radial-gradient(rgba(22, 47, 82, 0.05) 1px, transparent 1px),
+    radial-gradient(rgba(208, 172, 96, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px, 44px 44px;
+  background-position: 0 0, 14px 14px;
 }
 
 /* Custom Gradients & Utilities */
