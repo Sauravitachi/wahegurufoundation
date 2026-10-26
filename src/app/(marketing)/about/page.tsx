@@ -78,9 +78,9 @@ export default function AboutPage() {
       <Section variant="bg" spacing="lg">
         <Container className="max-w-5xl">
           <div className="rounded-3xl bg-[var(--surface)] border border-[var(--border)] p-8 sm:p-12 lg:p-14 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-5 relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md">
+            <div className="lg:col-span-5 relative aspect-[4/5] overflow-hidden ">
               <Image
-                src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80"
+                src="/brand/jass.png"
                 alt="Volunteers serving community meals"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -107,52 +107,6 @@ export default function AboutPage() {
           </div>
         </Container>
       </Section>
-
-    
-      {/* Advisory Board Section */}
-      <Section variant="bg" spacing="lg" id="advisors">
-        <Container>
-          <SectionHeading
-            eyebrow="Advisory Council"
-            title="Governed by Integrity, Wisdom &amp; Public Accountability"
-            description="Our independent council of jurists, public health leaders, and chartered accountants guarantees ethical compliance."
-          />
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {advisoryBoard.map((advisor) => (
-              <div
-                key={advisor.id}
-                className="rounded-2xl bg-[var(--surface)] border border-[var(--border)] p-6 flex flex-col justify-between hover:shadow-md transition-shadow"
-              >
-                <div>
-                  <div className="relative aspect-square w-full rounded-xl overflow-hidden mb-4 bg-gray-200">
-                    <Image
-                      src={advisor.image}
-                      alt={advisor.name}
-                      fill
-                      sizes="250px"
-                      className="object-cover"
-                    />
-                  </div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--gold-600)] block">
-                    {advisor.organization}
-                  </span>
-                  <h3 className="font-serif text-lg font-bold text-[var(--navy-900)] mt-1">
-                    {advisor.name}
-                  </h3>
-                  <p className="text-xs font-semibold text-[var(--navy-700)] mb-2">
-                    {advisor.role}
-                  </p>
-                  <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-                    {advisor.bio}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </Section>
-    
     </>
   );
 }

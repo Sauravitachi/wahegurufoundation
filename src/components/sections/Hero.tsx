@@ -64,8 +64,8 @@ export function Hero() {
             </div>
 
             {/* Trust strip & Video modal */}
-            <div className="pt-6 border-t border-[var(--border)] flex flex-wrap items-center justify-between gap-4">
-              <div className="flex items-center gap-3 bg-white border border-[var(--border)] rounded-2xl px-4 py-2.5 shadow-xs">
+            <div className=" flex flex-wrap items-center justify-between gap-4">
+              {/* <div className="flex items-center gap-3 bg-white border border-[var(--border)] rounded-2xl px-4 py-2.5 shadow-xs">
                 <div className="h-9 w-9 rounded-xl bg-[var(--gold-100)] border border-[var(--gold-300)] flex items-center justify-center text-[var(--gold-600)] shrink-0">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
@@ -73,13 +73,13 @@ export function Hero() {
                   <p className="font-bold text-[var(--navy-900)]">50% Tax Exemption</p>
                   <p className="text-[var(--text-muted)] text-xs">Under Section 80G of IT Act</p>
                 </div>
-              </div>
+              </div> */}
 
-              <VideoModal
+              {/* <VideoModal
                 videoUrl={heroContent.videoUrl}
                 triggerText="Watch Our Seva Documentary (3 Min)"
                 variant="light"
-              />
+              /> */}
             </div>
           </div>
 

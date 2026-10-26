@@ -9,7 +9,6 @@ export const homeSectionsOrder: HomeSectionKey[] = [
   "campaigns",
   "missionVision",
   "ourImpactMap",
-  "featuredAppeal",
   "focusAreas",
   "advisoryBoard",
   "howYouCanHelp",
@@ -36,33 +35,4 @@ export const heroContent = {
   },
   backgroundImage:
     "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1920&q=80",
-};
-
-export const featuredAppealContent = {
-  eyebrow: "Flagship Humanitarian Appeal",
-  title: "Guru Ka Langar: Nourishing 12,000 Lives Every Day",
-  description:
-    "No one should sleep hungry. In response to rising urban hardship, our daily community kitchens prepare wholesome vegetarian meals with warmth and respect for street workers, hospital patients, and elderly citizens.",
-  image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=80",
-  goal: 5000000,
-  raised: 3780000,
-  donorsCount: 2450,
-  campaignSlug: "langar-daily-wagers",
-  badge: "High Priority Appeal",
-};
-
-export const adoptChildContent = {
-  eyebrow: "Child Sponsorship Program",
-  title: "Empower a Child's Future Through Education",
-  description:
-    "For just ₹1,500/month (₹50 a day), you can sponsor the complete schooling, uniforms, nutritious midday meals, and health checkups of an underprivileged child.",
-  ctaText: "Sponsor a Child Today",
-  ctaHref: "/adopt-a-child",
-  image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=80",
-  perks: [
-    "Full tuition & school stationery coverage",
-    "Digital tablet for STEM learning",
-    "Quarterly academic progress reports",
-    "Tax deduction under Section 80G",
-  ],
 };

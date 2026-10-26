@@ -18,29 +18,11 @@ const waysToHelp = [
   },
   {
     icon: Users,
-    title: "Join as a Sevadar",
+    title: "Join as a Volunteer",
     description:
       "Lend your hands in our community kitchens, teach in rural digital classrooms, or offer professional skills.",
     cta: "Volunteer With Us",
     href: "/volunteer",
-    accent: "navy",
-  },
-  {
-    icon: Building2,
-    title: "Corporate CSR",
-    description:
-      "Partner with our trust for compliant CSR initiatives, solar water projects, and village school adoptions.",
-    cta: "CSR Partnerships",
-    href: "/csr",
-    accent: "navy",
-  },
-  {
-    icon: Megaphone,
-    title: "Spread the Word",
-    description:
-      "Be a champion for honest seva. Share our stories, organize a birthday donation drive, and advocate for equality.",
-    cta: "Read Field Stories",
-    href: "/blog",
     accent: "navy",
   },
 ];

@@ -16,14 +16,16 @@ export function MobileNav() {
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
   const pathname = usePathname();
 
+  const [prevPathname, setPrevPathname] = useState(pathname);
+  if (prevPathname !== pathname) {
+    setPrevPathname(pathname);
+    setIsOpen(false);
+  }
+
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
-
-  // Close menu automatically on route change
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
 
   // Lock body scroll and handle Escape key when menu is open
   useEffect(() => {

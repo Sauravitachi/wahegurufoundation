@@ -113,7 +113,6 @@ export type HomeSectionKey =
   | "hero"
   | "campaigns"
   | "missionVision"
-  | "featuredAppeal"
   | "focusAreas"
   | "advisoryBoard"
   | "howYouCanHelp"

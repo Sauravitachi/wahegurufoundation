@@ -54,11 +54,6 @@ export function CampaignGrid({ limit = 3, showHeading = true }: CampaignGridProp
                       <Badge variant="urgent">{campaign.urgencyBadge}</Badge>
                     )}
                   </div>
-                  {campaign.taxBenefits && (
-                    <div className="absolute bottom-3 right-3 bg-[var(--navy-900)]/85 text-[var(--gold-300)] text-[11px] font-semibold px-2.5 py-1 rounded-md backdrop-blur-xs">
-                      80G Certified
-                    </div>
-                  )}
                 </div>
 
                 {/* Content */}
@@ -75,32 +70,7 @@ export function CampaignGrid({ limit = 3, showHeading = true }: CampaignGridProp
                   </div>
 
                   {/* Financials & Progress Bar */}
-                  <div className="space-y-3 pt-4 border-t border-[var(--border)]/70">
-                    <div className="flex items-center justify-between text-xs font-semibold">
-                      <span className="text-[var(--navy-900)]">
-                        Raised:{" "}
-                        <strong className="text-[var(--gold-600)] text-sm">
-                          {formatCurrency(campaign.raised)}
-                        </strong>
-                      </span>
-                      <span className="text-[var(--text-muted)]">
-                        Goal: {formatCurrency(campaign.goal)}
-                      </span>
-                    </div>
-
-                    <Progress value={campaign.raised} max={campaign.goal} />
-
-                    <div className="flex items-center justify-between text-xs text-[var(--text-muted)]">
-                      <span className="flex items-center gap-1 font-medium">
-                        <Users className="w-3.5 h-3.5 text-[var(--navy-600)]" />
-                        <span>{campaign.donorsCount} Donors</span>
-                      </span>
-                      <span className="font-bold text-[var(--navy-800)]">
-                        {percentage}% Funded
-                      </span>
-                    </div>
-
-                    {/* Actions */}
+                  <div className="space-y-3 pt-4 border-t border-[var(--border)]/70">                    
                     <div className="pt-4 flex items-center gap-3">
                       <Button
                         asChild
@@ -111,19 +81,6 @@ export function CampaignGrid({ limit = 3, showHeading = true }: CampaignGridProp
                         <Link href={`/donate?campaign=${campaign.slug}`}>
                           <Heart className="w-3.5 h-3.5 mr-1.5 fill-[var(--navy-900)]" />
                           <span>Donate</span>
-                        </Link>
-                      </Button>
-                      <Button
-                        asChild
-                        variant="outline"
-                        size="sm"
-                        className="px-3"
-                      >
-                        <Link
-                          href={`/campaigns/${campaign.slug}`}
-                          aria-label={`View details for ${campaign.title}`}
-                        >
-                          <ArrowRight className="w-4 h-4" />
                         </Link>
                       </Button>
                     </div>

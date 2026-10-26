@@ -77,44 +77,7 @@ export default function ImpactPage() {
       {/* Interactive India Footprint Map & Photo Collage */}
       <OurImpactMap />
 
-      {/* States Reached Map Strip */}
-      <Section variant="surface" spacing="lg">
-        <Container>
-          <SectionHeading
-            eyebrow="Geographical Footprint"
-            title="Active Seva Across 18 Indian States &amp; UTs"
-            description="Our decentralized volunteer network enables emergency mobilization in under 24 hours."
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {statesReached.map((item) => (
-              <div
-                key={item.state}
-                className="p-6 rounded-2xl bg-white border border-[var(--border)] shadow-2xs hover:border-[var(--gold-500)] transition-colors"
-              >
-                <div className="flex items-center gap-2 mb-2">
-                  <MapPin className="w-4 h-4 text-[var(--gold-600)]" />
-                  <h4 className="font-serif text-lg font-bold text-[var(--navy-900)]">
-                    {item.state}
-                  </h4>
-                </div>
-                <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-                  {item.projects}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 text-center">
-            <Button asChild variant="donate" size="lg">
-              <Link href="/donate">
-                <Heart className="w-4 h-4 mr-2 fill-[var(--navy-900)]" />
-                <span>Support Our Nationwide Seva (80G)</span>
-              </Link>
-            </Button>
-          </div>
-        </Container>
-      </Section>
+    
     </>
   );
 }

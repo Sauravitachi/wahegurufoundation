@@ -181,30 +181,6 @@ export function CampaignListClient({ initialCampaigns }: CampaignListClientProps
                   </div>
 
                   <div className="space-y-3 pt-4 border-t border-[var(--border)]/70">
-                    <div className="flex items-center justify-between text-xs font-semibold">
-                      <span className="text-[var(--navy-900)]">
-                        Raised:{" "}
-                        <strong className="text-[var(--gold-600)] text-sm">
-                          {formatCurrency(campaign.raised)}
-                        </strong>
-                      </span>
-                      <span className="text-[var(--text-muted)]">
-                        Goal: {formatCurrency(campaign.goal)}
-                      </span>
-                    </div>
-
-                    <Progress value={campaign.raised} max={campaign.goal} />
-
-                    <div className="flex items-center justify-between text-xs text-[var(--text-muted)]">
-                      <span className="flex items-center gap-1 font-medium">
-                        <Users className="w-3.5 h-3.5 text-[var(--navy-600)]" />
-                        <span>{campaign.donorsCount} Donors</span>
-                      </span>
-                      <span className="font-bold text-[var(--navy-800)]">
-                        {percentage}% Funded
-                      </span>
-                    </div>
-
                     <div className="pt-4 flex items-center gap-3">
                       <Button
                         asChild
@@ -216,20 +192,7 @@ export function CampaignListClient({ initialCampaigns }: CampaignListClientProps
                           <Heart className="w-3.5 h-3.5 mr-1.5 fill-[var(--navy-900)]" />
                           <span>Donate</span>
                         </Link>
-                      </Button>
-                      <Button
-                        asChild
-                        variant="outline"
-                        size="sm"
-                        className="px-3"
-                      >
-                        <Link
-                          href={`/campaigns/${campaign.slug}`}
-                          aria-label={`View details for ${campaign.title}`}
-                        >
-                          <ArrowRight className="w-4 h-4" />
-                        </Link>
-                      </Button>
+                      </Button>                      
                     </div>
                   </div>
                 </div>

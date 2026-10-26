@@ -47,37 +47,6 @@ export const headerNavigation: NavItem[] = [
     ],
   },
   {
-    title: "Focus Areas",
-    href: "/focus-areas/education",
-    children: [
-      {
-        title: "Education & Literacy",
-        href: "/focus-areas/education",
-        description: "Schools, digital learning labs, and scholarships",
-      },
-      {
-        title: "Healthcare & Mobile Clinics",
-        href: "/focus-areas/healthcare",
-        description: "Preventative care, free medicines, and eye surgery camps",
-      },
-      {
-        title: "Hunger Relief & Langar",
-        href: "/focus-areas/hunger-relief",
-        description: "Community kitchens and dignified zero-hunger initiatives",
-      },
-      {
-        title: "Environment & Clean Water",
-        href: "/focus-areas/environment",
-        description: "Afforestation, water filtration plants, and solar village lighting",
-      },
-      {
-        title: "Disaster Emergency Relief",
-        href: "/focus-areas/disaster-relief",
-        description: "Rapid deployment of dry rations, medical kits, and rescue gear",
-      },
-    ],
-  },
-  {
     title: "Gallery",
     href: "/gallery",
   },
