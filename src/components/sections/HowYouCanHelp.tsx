@@ -37,7 +37,7 @@ export function HowYouCanHelp() {
           description="Whether through financial stewardship, on-ground seva, corporate partnerships, or community advocacy, every act creates a lasting ripple of hope."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {waysToHelp.map((way) => {
             const Icon = way.icon;
             const isGold = way.accent === "gold";

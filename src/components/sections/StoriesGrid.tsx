@@ -74,7 +74,7 @@ export function StoriesGrid() {
                         src={post.author.avatar}
                         alt={post.author.name}
                         fill
-                        className="object-cover"
+                        className="object-cover object-top"
                       />
                     </div>
                     <span className="text-xs font-semibold text-[var(--navy-800)]">

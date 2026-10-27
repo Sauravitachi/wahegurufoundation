@@ -106,7 +106,7 @@ export default async function BlogPostDetailPage({ params }: BlogPostPageProps) 
                   src={post.author.avatar}
                   alt={post.author.name}
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
               <div>
@@ -236,7 +236,7 @@ export default async function BlogPostDetailPage({ params }: BlogPostPageProps) 
                 src={post.author.avatar}
                 alt={post.author.name}
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
             <div>

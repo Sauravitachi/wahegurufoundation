@@ -14,7 +14,7 @@ export const campaigns: Campaign[] = [
     goal: 5000000,
     raised: 3780000,
     donorsCount: 2450,
-    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=80",
+    image: "/brand/langar.jpeg",
     status: "urgent",
     urgencyBadge: "High Need",
     isFeatured: true,
