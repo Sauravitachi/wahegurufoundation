@@ -28,7 +28,6 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ message: "Invalid submission" }, { status: 400 });
     }
 
-    // TODO: Send notification email to contact@wahegurufoundation.org
     console.log(`[CONTACT_ENQUIRY] From: ${result.data.name} <${result.data.email}>, Subject: ${result.data.subject}`);
 
     return NextResponse.json({

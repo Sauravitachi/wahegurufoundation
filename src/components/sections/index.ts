@@ -5,7 +5,6 @@ export * from "./FocusAreas";
 export * from "./AdvisoryBoard";
 export * from "./HowYouCanHelp";
 export * from "./ProcessSteps";
-export * from "./Testimonials";
 export * from "./GalleryGrid";
 export * from "./StoriesGrid";
 export * from "./FAQ";

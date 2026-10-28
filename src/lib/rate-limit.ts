@@ -1,8 +1,3 @@
-/**
- * Lightweight sliding-window in-memory rate limiter with fallback.
- * Can be swapped with Upstash Redis in serverless multi-region deployments.
- */
-
 interface RateLimitStore {
   count: number;
   resetTime: number;
@@ -11,8 +6,8 @@ interface RateLimitStore {
 const memoryStore = new Map<string, RateLimitStore>();
 
 export interface RateLimitOptions {
-  limit?: number; // max requests
-  windowMs?: number; // window duration in milliseconds
+  limit?: number;
+  windowMs?: number;
 }
 
 export function rateLimit(
@@ -20,7 +15,7 @@ export function rateLimit(
   options: RateLimitOptions = {}
 ): { success: boolean; remaining: number; reset: number } {
   const limit = options.limit ?? 10;
-  const windowMs = options.windowMs ?? 60 * 1000; // 1 minute
+  const windowMs = options.windowMs ?? 60 * 1000;
   const now = Date.now();
 
   const record = memoryStore.get(identifier);

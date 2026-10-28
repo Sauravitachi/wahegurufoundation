@@ -177,47 +177,7 @@ export default async function CampaignDetailPage({ params }: CampaignDetailPageP
             {/* Right Sticky Donate Box (4 cols) */}
             <div className="lg:col-span-4 lg:sticky lg:top-24 space-y-6">
               <div className="rounded-2xl bg-white border-2 border-[var(--gold-500)]/40 p-6 sm:p-8 shadow-xl space-y-6">
-                <div>
-                  <div className="flex items-baseline justify-between mb-2">
-                    <span className="font-serif text-2xl sm:text-3xl font-extrabold text-[var(--navy-900)]">
-                      {formatCurrency(campaign.raised)}
-                    </span>
-                    <span className="text-xs text-[var(--text-muted)]">
-                      Goal: {formatCurrency(campaign.goal)}
-                    </span>
-                  </div>
-
-                  <Progress value={campaign.raised} max={campaign.goal} className="h-3" />
-
-                  <div className="flex items-center justify-between text-xs text-[var(--text-muted)] mt-2">
-                    <span className="flex items-center gap-1 font-medium">
-                      <Users className="w-3.5 h-3.5 text-[var(--navy-600)]" />
-                      <span>{campaign.donorsCount} Donors</span>
-                    </span>
-                    <span className="font-bold text-[var(--gold-600)]">
-                      {percentage}% Raised
-                    </span>
-                  </div>
-                </div>
-
-                {/* Suggested Fast Donation Amounts */}
-                <div className="space-y-2">
-                  <label className="text-xs font-bold text-[var(--navy-900)] uppercase tracking-wider block">
-                    Choose Amount to Donate:
-                  </label>
-                  <div className="grid grid-cols-2 gap-2">
-                    {(campaign.suggestedAmounts || [500, 1500, 3000, 7500]).map((amt) => (
-                      <Link
-                        key={amt}
-                        href={`/donate?campaign=${campaign.slug}&amount=${amt}`}
-                        className="py-2.5 px-3 rounded-xl border border-[var(--border)] bg-[var(--surface)] text-center text-sm font-bold text-[var(--navy-900)] hover:border-[var(--gold-500)] hover:bg-[var(--gold-100)] transition-colors"
-                      >
-                        {formatCurrency(amt)}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-
+                
                 {/* Primary Donate Button */}
                 <Button asChild variant="donate" size="lg" className="w-full text-base h-13 shadow-md">
                   <Link href={`/donate?campaign=${campaign.slug}`}>

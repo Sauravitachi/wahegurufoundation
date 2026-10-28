@@ -11,7 +11,7 @@ export const focusAreas: FocusArea[] = [
     fullDescription:
       "Education is the most sustainable vehicle for breaking generational cycles of inequality. Waheguru Foundation supports underserved community schools through infrastructure rehabilitation, teacher honorariums, digital smart classrooms, and merit-cum-need scholarships for female students.",
     iconName: "GraduationCap",
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/seva/students.png",
     stats: [
       { label: "Students Supported", value: "14,500+" },
       { label: "Community Schools", value: "48" },
@@ -33,7 +33,7 @@ export const focusAreas: FocusArea[] = [
     fullDescription:
       "Affordable quality healthcare is a fundamental human right. Our mobile healthcare initiative brings qualified medical teams, diagnostic equipment, and free essential medicines straight to rural doorsteps where tertiary healthcare facilities are days of travel away.",
     iconName: "Stethoscope",
-    image: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/seva/blood-camp.png",
     stats: [
       { label: "Patients Treated", value: "280,000+" },
       { label: "Mobile Clinics Active", value: "14" },
@@ -55,7 +55,7 @@ export const focusAreas: FocusArea[] = [
     fullDescription:
       "Rooted in the eternal concept of Pangat (eating together as equals without distinction of status or creed), our community kitchens prepare and serve over 10,000 freshly cooked, nutritionally balanced vegetarian meals every single day to construction workers, hospital attendees, and street dwellers.",
     iconName: "Utensils",
-    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/seva/langar-seva.png",
     stats: [
       { label: "Total Meals Served", value: "3.8 Million+" },
       { label: "Daily Thalis Prepared", value: "12,000+" },
@@ -77,7 +77,7 @@ export const focusAreas: FocusArea[] = [
     fullDescription:
       "Pawan Guru, Pani Pita, Mata Dharat Mahat (Air is the Teacher, Water the Father, Earth the Great Mother). Inspired by these reverence-filled teachings, we restore degraded village ecosystems with clean solar water purification kiosks, rainwater percolation tanks, and Miyawaki indigenous urban mini-forests.",
     iconName: "Trees",
-    image: "https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/seva/slum-langar-sanitation.png",
     stats: [
       { label: "Liters Filtered Daily", value: "120,000" },
       { label: "Native Trees Planted", value: "85,000+" },
@@ -99,7 +99,7 @@ export const focusAreas: FocusArea[] = [
     fullDescription:
       "When unforeseen disasters strike, time is of the essence. Waheguru Foundation maintains pre-staged emergency relief stocks of dry rations, water purification sachets, waterproof family tents, and medical emergency kits, with trained volunteer response units ready for 24-hour rapid mobilization.",
     iconName: "ShieldAlert",
-    image: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/seva/roadside-rescue.png",
     stats: [
       { label: "Disaster Responses", value: "32 Deployments" },
       { label: "Ration Kits Dispatched", value: "160,000+" },

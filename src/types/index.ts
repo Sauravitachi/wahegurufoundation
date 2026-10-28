@@ -117,7 +117,6 @@ export type HomeSectionKey =
   | "advisoryBoard"
   | "howYouCanHelp"
   | "howWeWork"
-  | "testimonials"
   | "galleryPreview"
   | "latestStories"
   | "faq"
