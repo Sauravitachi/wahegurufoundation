@@ -2,7 +2,6 @@ export * from "./Hero";
 export * from "./CampaignGrid";
 export * from "./MissionVision";
 export * from "./FocusAreas";
-export * from "./AdvisoryBoard";
 export * from "./HowYouCanHelp";
 export * from "./ProcessSteps";
 export * from "./GalleryGrid";

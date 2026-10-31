@@ -14,7 +14,6 @@ import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
-import { AdvisoryBoard } from "@/components/sections/AdvisoryBoard";
 import { siteConfig } from "@/config/site";
 import { constructMetadata } from "@/lib/metadata";
 import { ReportDownloadButton } from "@/components/shared";
@@ -219,8 +218,7 @@ export default function AboutPage() {
         </Container>
       </Section>
     
-      <AdvisoryBoard />
-
+    
     </>
   );
 }

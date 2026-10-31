@@ -10,7 +10,6 @@ export const homeSectionsOrder: HomeSectionKey[] = [
   "missionVision",
   "ourImpactMap",
   "focusAreas",
-  "advisoryBoard",
   "howYouCanHelp",
   "howWeWork",
   "galleryPreview",

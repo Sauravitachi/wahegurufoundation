@@ -114,7 +114,6 @@ export type HomeSectionKey =
   | "campaigns"
   | "missionVision"
   | "focusAreas"
-  | "advisoryBoard"
   | "howYouCanHelp"
   | "howWeWork"
   | "galleryPreview"
