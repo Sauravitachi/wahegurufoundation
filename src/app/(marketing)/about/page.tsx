@@ -139,12 +139,10 @@ export default function AboutPage() {
                         Jaskaran Singh
                       </p>
                       <p className="text-[10px] sm:text-[11px] font-semibold text-[var(--gold-600)] uppercase tracking-wide">
-                        Managing Trustee • Waheguru Foundation
+                        Founder • Waheguru Foundation
                       </p>
                     </div>
-                    <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-[var(--gold-100)] text-[var(--navy-900)] border border-[var(--gold-300)]/60 shrink-0">
-                      ੴ
-                    </span>
+                    
                   </div>
                 </div>
               </div>

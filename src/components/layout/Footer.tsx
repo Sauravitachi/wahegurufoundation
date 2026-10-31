@@ -45,7 +45,7 @@ export function Footer() {
 
             <div className="pt-2 text-xs text-gray-400 space-y-1">
               <p>
-                <strong className="text-gray-200">Registered Trust:</strong>{" "}
+                <strong className="text-gray-200">Registered NGO:</strong>{" "}
                 {siteConfig.legal.registeredName}
               </p>
               <p>

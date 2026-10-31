@@ -134,7 +134,7 @@ export const campaigns: Campaign[] = [
     goal: 2200000,
     raised: 1980000,
     donorsCount: 890,
-    image: "/images/seva/skill-development.png",
+    image: "/gallary/gallary112.jpeg",
     status: "active",
     taxBenefits: true,
     suggestedAmounts: [800, 2400, 4800, 12000],

@@ -19,6 +19,7 @@ import {
   impactHotspots,
   leftCollagePhotos,
   rightCollagePhotos,
+  totalVolunteersCount,
   ImpactHotspot,
 } from "@/content/impact-map";
 import { Button } from "@/components/ui/button";
@@ -50,11 +51,11 @@ export function OurImpactMap() {
     <section className="bg-grain-texture py-16 sm:py-20 lg:py-24 relative overflow-hidden border-y border-[var(--border)]">
       <div className="absolute inset-0 bg-radial from-transparent via-transparent to-[var(--navy-900)]/[0.02] pointer-events-none" />
 
-      {/* SECTION HEADER: 'Our' cursive + 'Volunteers' bold navy */}
+      {/* SECTION HEADER: 'Our' cursive + 'Volunteers' bold navy + Total Volunteers Count */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 mb-10 sm:mb-14">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#FF6734]/10 border border-[#FF6734]/20 text-[#FF6734] text-xs font-semibold uppercase tracking-wider mb-4">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FF6734]/10 border border-[#FF6734]/20 text-[#FF6734] text-xs font-semibold uppercase tracking-wider mb-4 shadow-2xs">
           <Users className="w-3.5 h-3.5" />
-          <span>Ground Sevadar Network</span>
+          <span>{totalVolunteersCount.toLocaleString()}+ Ground Sevadars Network</span>
         </div>
 
         <div className="flex items-baseline justify-center gap-2 sm:gap-3 mb-3">
@@ -65,6 +66,10 @@ export function OurImpactMap() {
             Volunteers
           </span>
         </div>
+
+        <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          A dedicated force of <strong className="text-[var(--navy-900)] font-semibold">{totalVolunteersCount.toLocaleString()}+ active volunteer sevadars</strong> mobilized across {impactHotspots.length} states and union territories, delivering daily langar, mobile diagnostics, and emergency relief.
+        </p>
       </div>
 
       <div className="relative z-10 max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8">

@@ -26,7 +26,7 @@ const previewImages: LightboxImage[] = [
     caption: "Equipping young minds with digital learning tablets and interactive learning modules.",
   },
   {
-    src: "/gallary/gallary13.jpeg",
+    src: "/gallary/gallary121.jpeg",
     alt: "Mobile health clinic providing health checkups",
     title: "Doorstep Medical Consultation",
     category: "Healthcare",

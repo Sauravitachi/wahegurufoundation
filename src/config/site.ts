@@ -44,7 +44,7 @@ export const siteConfig = {
   },
 
   legal: {
-    registeredName: "Waheguru Humanitarian Foundation Trust",
+    registeredName: "Waheguru Humanitarian Foundation NGO",
     trustRegistrationNo: "DIC/OL/SOCIETIES/9143",
     darpanId: "DL/2021/0298411",
     section80G: "CIT(E)/DELHI/80G/2021-22/AABTW1234F/01",

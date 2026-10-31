@@ -7,8 +7,8 @@ export interface ImpactHotspot {
   description: string;
   iconType: "megaphone" | "mappin" | "hands" | "heart" | "radiance";
   coordinates: {
-    x: number; // percentage from left
-    y: number; // percentage from top
+    x: number;
+    y: number;
   };
   tooltipPosition?: "top" | "bottom" | "left" | "right";
   initiatives: string[];
@@ -25,14 +25,32 @@ export interface ImpactGalleryPhoto {
 
 export const impactHotspots: ImpactHotspot[] = [
   {
+    id: "jammu-kashmir",
+    stateName: "Jammu & Kashmir",
+    region: "Jammu & Kashmir",
+    statValue: "400+",
+    statLabel: "Active Sevadars",
+    description: "High-altitude relief drives, mountain emergency medical response, and winter thermal survival kits for remote habitations.",
+    iconType: "radiance",
+    coordinates: { x: 34, y: 10.5 },
+    tooltipPosition: "right",
+    hubs: "Jammu, Srinagar, Pulwama, Baramulla",
+    initiatives: [
+      "Mountain High-Altitude Medical Outreach",
+      "Winter Blanket & Thermal Kit Drives",
+      "Emergency Valley Food Supply",
+      "Disaster Rapid Response Units",
+    ],
+  },
+  {
     id: "himachal",
     stateName: "Himachal",
     region: "Himachal Pradesh",
-    statValue: "60+",
+    statValue: "1012+",
     statLabel: "Active Sevadars",
     description: "High-altitude relief drives, mountain flash flood response, and winter thermal survival kits for remote habitations.",
     iconType: "radiance",
-    coordinates: { x: 38, y: 16 },
+    coordinates: { x: 39, y: 17.5 },
     tooltipPosition: "right",
     hubs: "Kangra, Shimla, Mandi, Solan, Kullu",
     initiatives: [
@@ -46,12 +64,12 @@ export const impactHotspots: ImpactHotspot[] = [
     id: "punjab",
     stateName: "Punjab",
     region: "Punjab",
-    statValue: "220+",
+    statValue: "14920+",
     statLabel: "Active Sevadars",
     description: "Central seva operations, daily hot langar kitchens, flood evacuation flotillas, and digital smart classrooms.",
     iconType: "heart",
-    coordinates: { x: 26, y: 21 },
-    tooltipPosition: "right",
+    coordinates: { x: 32, y: 21 },
+    tooltipPosition: "left",
     hubs: "Amritsar, Mohali, Ludhiana, Jalandhar, Patiala",
     initiatives: [
       "Daily Guru Ka Langar Kitchens",
@@ -64,11 +82,11 @@ export const impactHotspots: ImpactHotspot[] = [
     id: "haryana",
     stateName: "Haryana",
     region: "Haryana",
-    statValue: "95+",
+    statValue: "2588+",
     statLabel: "Active Sevadars",
     description: "Rural mobile dispensaries, doorstep elderly health checkups, and women's stitching and vocational skill centers.",
     iconType: "hands",
-    coordinates: { x: 32, y: 27 },
+    coordinates: { x: 35, y: 25.5 },
     tooltipPosition: "left",
     hubs: "Ambala, Karnal, Gurugram, Kurukshetra, Panipat",
     initiatives: [
@@ -82,11 +100,11 @@ export const impactHotspots: ImpactHotspot[] = [
     id: "delhi",
     stateName: "Delhi",
     region: "Delhi NCR",
-    statValue: "140+",
+    statValue: "7040+",
     statLabel: "Active Sevadars",
     description: "Daily hospital compound langars for patient attendants, winter pavement night drives, and emergency medicines.",
     iconType: "megaphone",
-    coordinates: { x: 39.5, y: 29.5 },
+    coordinates: { x: 38.5, y: 26.5 },
     tooltipPosition: "right",
     hubs: "West Delhi, AIIMS/Hospital Hubs, Okhla, Rohini",
     initiatives: [
@@ -100,11 +118,11 @@ export const impactHotspots: ImpactHotspot[] = [
     id: "rajasthan",
     stateName: "Rajasthan",
     region: "Rajasthan",
-    statValue: "85+",
+    statValue: "3407+",
     statLabel: "Active Sevadars",
     description: "Solar-powered borewell desalination, rainwater harvesting ponds, and drought nutrition distribution.",
     iconType: "mappin",
-    coordinates: { x: 22, y: 38 },
+    coordinates: { x: 27, y: 34 },
     tooltipPosition: "right",
     hubs: "Jaipur, Bikaner, Jodhpur, Alwar, Sri Ganganagar",
     initiatives: [
@@ -114,22 +132,48 @@ export const impactHotspots: ImpactHotspot[] = [
       "Child Schooling Tablet Scholarships",
     ],
   },
+  {
+    id: "uttar-pradesh",
+    stateName: "Uttar Pradesh",
+    region: "Uttar Pradesh",
+    statValue: "3001+",
+    statLabel: "Active Sevadars",
+    description: "Mobile diagnostic camps, winter night relief, emergency flood support, and youth community skill development.",
+    iconType: "megaphone",
+    coordinates: { x: 50, y: 31 },
+    tooltipPosition: "right",
+    hubs: "Noida, Ghaziabad, Lucknow, Varanasi, Kanpur, Agra",
+    initiatives: [
+      "Doorstep Diagnostic & Health Camps",
+      "Winter Thermal Blanket Distribution",
+      "Emergency Flood Relief & Food Rations",
+      "Youth Skill & Livelihood Centers",
+    ],
+  },
 ];
+
+/**
+ * Total active volunteers calculated across all states
+ */
+export const totalVolunteersCount = impactHotspots.reduce((sum, spot) => {
+  const num = parseInt(spot.statValue.replace(/[^0-9]/g, ""), 10) || 0;
+  return sum + num;
+}, 0);
 
 export const leftCollagePhotos: ImpactGalleryPhoto[] = [
   {
     id: "left-1",
-    src: "/gallary/gallary110.jpeg",
-    alt: "Waheguru Foundation volunteer gathering",
-    caption: "Volunteer assembly for relief mobilization in village community",
-    aspectClass: "aspect-[4/3]",
-  },
-  {
-    id: "left-2",
-    src: "/gallary/gallary111.jpeg",
+    src: "/gallary/gallary121.jpeg",
     alt: "Outdoor seva meeting with local villagers",
     caption: "Grassroots outreach and needs assessment under village canopy",
     aspectClass: "aspect-[3/2]",
+  },
+  {
+    id: "left-2",
+    src: "/gallary/gallary124.jpeg",
+    alt: "Child nutrition and fresh fruit distribution",
+    caption: "Supplying healthy fruits and nutrition to underserved children",
+    aspectClass: "aspect-[4/3]",
   },
   {
     id: "left-3",
@@ -185,9 +229,9 @@ export const rightCollagePhotos: ImpactGalleryPhoto[] = [
   },
   {
     id: "right-2",
-    src: "/gallary/gallary13.jpeg",
-    alt: "Field coordination team interview and registration",
-    caption: "Volunteer coordinator conducting field registrations",
+    src: "/gallary/gallary126.jpeg",
+    alt: "Hospital patient care and nutrition seva",
+    caption: "Nutritional fruit seva and care for recovering hospital patients",
     aspectClass: "aspect-[4/3]",
   },
   {
